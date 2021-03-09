@@ -1,0 +1,22 @@
+<%-include("./Partials/header.ejs")-%>
+
+<h1> Home </h1>
+  <p> <%= StartingContent %> </p>
+
+ <% posts.forEach(function(post) {  %>
+ <h2><%= post.input %> </h2>
+ <p>
+   <%= post.description.substring(1, 100) + "..." %>
+  <a href="/posts/<%=post.slug%>">Read More</a>
+   </p>
+ <% }); %>
+
+
+
+
+
+
+
+
+
+<%-include("./Partials/footer.ejs")-%>

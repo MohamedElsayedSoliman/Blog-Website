@@ -1,0 +1,52 @@
+<%-include("./Partials/header.ejs")-%>
+
+
+
+
+  <div class="container">
+  	<div class="row">
+
+  	    <div class="col-md-8 col-md-offset-2">
+
+          <h1> Compose </h1>
+          <form action="/compose" method="post">
+
+      		    <div class="form-group">
+      		        <label for="title">Title <span class="require">*</span></label>
+      		        <input type="text" class="form-control" name="input" >
+      		    </div>
+
+      		    <div class="form-group">
+      		        <label for="description">Description <span class="require">*</span></label>
+      		        <textarea rows="5" class="form-control" name="description" ></textarea>
+      		    </div>
+
+      		    <div class="form-group">
+      		        <p><span class="require">*</span>  Required fields</p>
+      		    </div>
+              <div class="form-group">
+                 		        <button type="submit" class="btn btn-primary"  >
+                 		            Publish
+                 		        </button>
+                 		        <button class="btn btn-default">
+                 		            Cancel
+                 		        </button>
+                 		    </div>
+
+                 		</form>
+             		</div>
+
+             	</div>
+             </div>
+
+
+
+
+
+
+
+
+
+
+
+<%-include("./Partials/footer.ejs")-%>
